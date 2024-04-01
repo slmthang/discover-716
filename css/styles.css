@@ -33,7 +33,7 @@ body > div {
     min-height: 220px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 #top-nav-bar1 {
@@ -68,13 +68,19 @@ body > div {
     margin-left: 1rem;
 }
 
+.top-nav-menu-option i:hover {
+    color:#e5003d;
+    cursor: pointer;
+}
+
 .top-nav-menu-option.socials {
     margin-left: 5rem;
 }
 
-.top-nav-menu-option:hover {
+.top-nav-menu-option > p:hover {
     cursor: pointer;
     font-style: italic;
+    color:#e5003d;
 }
 
 #top-nav-bar2 {
@@ -105,6 +111,9 @@ body > div {
     margin-left: 2rem;
 }
 
+#logo > img:hover {
+    cursor: pointer;
+}
 
 /* nav-menus */
 #nav-menus {
@@ -183,56 +192,10 @@ body > div {
 /* Main Area */
 
 #main-area {
-    background-color: green;
+    /* background-color: green; */
+    width: 100%;
     min-height: 100%;
     position: relative;
-}
-
-#welcome {
-    /* font-size: 5em;
-    font-weight: bolder;
-    color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;  
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 800px;
-    max-height: 500px; */
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#welcome p {
-    font-size: 6em;
-    font-weight: bolder;
-    color: white;
-}
-
-#bridge {
-    height: 50%;
-    background-image: url(./sunset.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#sun-set {
-    height: 50%;
-    background-image: url(./bridge.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 

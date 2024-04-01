@@ -8,8 +8,8 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/jpg" href="./img/logo-716.png"/>
     <!-- local-css -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- scripts -->    
@@ -46,7 +46,7 @@
             <div id="top-nav-bar2">
                 <div id="logo-cont">
                     <div id="logo">
-                        <img src="./img/logo-716.png" alt="Discover716 Logo" width="100%" height="100%" onclick="window.location='/index.html'">
+                        <img src="../img/logo-716.png" alt="Discover716 Logo" width="100%" height="100%" onclick="window.location='/index.html'">
                     </div>
                 </div>
                 <div id="nav-menus">
@@ -186,16 +186,109 @@
         
         <!-- main-area -->
         <main id="main-area">
-            <div id="cont1">
-                <div id="sun-set">
-                </div>
-            </div>
-            <div id="welcome-msg">
-                <p>WE LIVE & BREATHE BUFFALO, NY</p>
-            </div>
-            <div id="cont2">
-                
-                <div id="bridge">
+            <div id="contact">
+                <div id="contact-container">
+                    <div class="main-title">
+                        <h2><span>Contact Us</span></h2>
+                    </div>
+                    <div id="contact-content-con">
+        
+                        <div class="left-contact">
+                            <h4>Our Contacts</h4>
+                            <p>
+                                Below are our contacts. <br />
+                                You can also contact us by filling the form.
+                            </p>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Location:
+                                    </div>
+                                    <p>
+                                        Buffalo, US
+                                    </p>
+                                </div>
+            
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        Email:
+                                    </div>
+                                    <p>
+                                        discover716@gmail.com
+                                    </p>
+                                </div>
+            
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                        Phone:
+                                    </div>
+                                    <p>
+                                        716-xxx-xxx
+                                    </p>
+                                </div>
+            
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-earth-americas"></i>
+                                        Languages:
+                                    </div>
+                                    <p>
+                                        English
+                                    </p>
+                                </div>
+                            </div>
+            
+                            <div class="contact-socials">
+                                <div class="contact-social">
+                                    <a href="https://www.facebook.com/Discover716/" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-social">
+                                    <a href="https://www.instagram.com/discover716.balancedliving/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-social">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-social">
+                                    <a href="https://www.linkedin.com/company/discover716/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div> 
+                                
+                        </div>
+        
+                        <div class="right-contact">
+                            <form action="https://formspree.io/f/xleqponl" class="contact-form" method="POST">
+                                <div id="fields">
+                                    <div class="input-control name-email">
+                                        <input type="text" name="name" placeholder="Name" required>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="input-control">
+                                        <input type="text" name="subject" placeholder="Subject" required>
+                                    </div>
+                                    <div class="input-control">
+                                        <textarea name="message" cols="30" rows="10" placeholder="Enter Message Here..."></textarea>
+                                    </div>
+                                    <div class="submit-btn">
+                                        <div id="submit">
+                                            <input type="submit" value="Send">
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
