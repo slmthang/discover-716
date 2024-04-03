@@ -1,0 +1,162 @@
+/********************************* TOP NAV BAR  *********************************/
+
+
+
+
+#top-nav-bar {
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+
+#top-nav-bar1 {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    background-color: var(--color-primary);
+    color: var(--light-text);
+}
+
+#top-nav-bar1 > .empty {
+    width: 30%;
+    height: 4rem;
+}
+
+#top-nav-menus {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-menu-option {
+    flex: 0 1 185px;
+    min-width: 100px;
+    max-width: 185px;
+}
+
+.top-nav-menu-option > p:hover {
+    cursor: pointer;
+    color: var(--color-secondary);
+}
+
+.top-nav-menu-option.socials {
+    flex: 0 1 200px;
+    max-width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.top-nav-menu-option.socials > i:hover {
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+
+/* 2nd Nav Bar */
+#top-nav-bar2 {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    background-color: var(--color-primary);
+}
+
+
+#logo-cont {
+    width: 15%;
+}
+
+#logo {
+    max-width: 130px;
+    max-height: 120px;
+    width: 130px;
+    height: 120px;
+    flex-shrink: 1;
+}
+
+#dropdown-nav-menus {
+    width: 85%;
+    justify-content: space-around;
+}
+
+.dropdown-nav-menu {
+    max-width: 180px;
+    width: 150px;
+    height: 3rem;
+    font-size: 1.1rem;
+    margin: 0 0 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.dropdown-nav-menu:hover {
+    cursor: pointer;
+}
+
+.dropdown-nav-menu:hover .nav-more-options{
+    display: block;
+}
+
+.dropdown-nav-menu:hover .nav-option{
+    color: black;
+}
+
+.nav-option {
+    background-color: var(--color-secondary);
+    color: #323b8c;
+    font-size: 1.1rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-more-options {
+    padding: 5rem 0 0 0;
+    left: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    max-width: 120%;
+    width: 120%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.nav-more-option {
+    width: 100%;
+    min-height: 3rem;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.1rem;
+    background-color: var(--color-primary);
+    padding-left: 0.5rem;
+    color: var(--light-text)
+}
+
+.nav-more-option > p {
+    padding: 4px;
+}
+
+.nav-more-option:hover {
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: black;
+}
+
+
+
+
+/* Main Area */
+
+#main-area {
+    /* background-color: green; */
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}

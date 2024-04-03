@@ -30,7 +30,8 @@ body > div {
 
 
 #top-nav-bar {
-    min-height: 220px;
+    /* min-height: 220px;  */
+    min-height: 13rem;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -197,6 +198,11 @@ body > div {
     min-height: 100%;
     position: relative;
 }
+
+
+
+
+
 
 
 
