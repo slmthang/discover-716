@@ -1,0 +1,48 @@
+
+
+#intro-message {
+    width: 100vw;
+    min-height: 200vh;
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+#cont1 {
+    width: 100%;
+    height: 100vh;
+    background-color: lightcoral;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    background-image: url(../img/bridge.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#welcome-text {
+    font-size: 3.5em;
+    font-weight: bolder;
+    color: white;
+    position: fixed;
+    top: 50vh;
+    width: 80%;
+    z-index: 2;
+    text-align: center;
+}
+
+#cont2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-image: url(../img/sunset.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

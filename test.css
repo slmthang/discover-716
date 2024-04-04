@@ -1,0 +1,73 @@
+
+#homepage-main {
+    width: 100vw;
+    height: 100vh;
+}
+
+#about-us {
+    width: 100%;
+    height: 100%;
+}
+
+#about-us > .cont0 {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    display: flex;
+}
+
+#description {
+    width: 55%;
+    height: 100%;
+    background-color: var(--dark-grey-bg);
+    color: white;
+    flex-direction: column;
+}
+
+#description > .cont0 {
+    width: 80%;
+    height: 65%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#description > .cont0 h1 {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    height: 15%;
+    text-align: left;
+}
+
+#description > .cont0 h3 {
+    font-size: 2.25rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    height: 15%;
+    text-align: left;
+}
+
+#description > .cont0 p {
+    font-size: 1.7rem;
+    width: 100%;
+    height: 70%;
+    text-align: left;
+}
+
+#pic-slider {
+    width: 45%;
+    height: 100%;
+    background-color: lightgreen;
+    flex-direction: column;
+}
+
+#slides {
+    width: 100%;
+    height: 85%;
+}
+
+
+.slide {
+    display: none;
+}
