@@ -5,8 +5,8 @@ let showIndex = 1;
 displaySlides(showIndex);
 
 
-let nextButton = document.getElementById("next");
-let prevButton = document.getElementById("prev");
+let nextButton = document.getElementById("nextSlide");
+let prevButton = document.getElementById("prevSlide");
 
 nextButton.onclick = () => calShowIndex(1);
 prevButton.onclick = () => calShowIndex(-1);
