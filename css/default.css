@@ -17,17 +17,8 @@
     --color-secondary: #e5003d; /* red color */
     --light-text: #a2a6cf; /* light text color */
     --dark-grey-bg: #383838; /* dark grey color */
-    --color-white-0: rgb(223, 223, 223); 
-    --color-timeline-bg: #6e7070; 
-    --color-theme-bt: #2E2E2E; 
-    --color-white-1: #ecf0f1;
-    --color-white-2: #7b7d7d;
-    --color-black-0: #000000;
-    --color-black-1: #2E2E2E;
-    --color-black-2: #5C5C5C;
-    --color-blue: #166fe5;
-    --color-green: #42b72a;
-    --br-sm-2: 14px;
+    --shadow-line-w: rgba(255, 255, 255, 0.2);
+    --shadow-line-b: rgba(0,0,0,.2);
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
 }
 

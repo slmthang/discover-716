@@ -1,50 +1,8 @@
 
 
-
-// let showIndex = 1;
-// displaySlides(showIndex);
-
-
-// let nextButton = document.getElementById("nextSlide");
-// let prevButton = document.getElementById("prevSlide");
-
-// nextButton.onclick = () => calShowIndex(1);
-// prevButton.onclick = () => calShowIndex(-1);
-
-
-// function calShowIndex(n) {
-//     displaySlides(showIndex += n);
-// }
-
-
-// function displaySlides(n) {
-
-//     let slides = document.querySelectorAll("#slides .slide");
-
-//     if (n > slides.length) {
-//         showIndex = 1;
-//     } else if (n < 1) {
-//         showIndex = slides.length;
-//     }
-
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-
-//     slides[showIndex-1].style.display = "block";
-// }
-
-
-
 // slideshow welcome
 let changeIntroIndex = 0;
 const intro_imgs = document.querySelectorAll("#intro-message img");
-
-// intro_imgs[0].style.display="none"; 
-// intro_imgs[1].style.display="block";
-
-
-// console.log(intro_imgs[0].style);
 
 function changeIntro() {
 
@@ -60,6 +18,56 @@ function changeIntro() {
     intro_imgs[changeIntroIndex].style.display = "block";    
 }
 
-setInterval(changeIntro, 4000);
+// changeIntro
+setInterval(changeIntro, 4500);
+
+
+
+// HomePagePicsSlider
+const checkbound = function (n) {
+    if (n == 8) {
+        return 1;
+    } else if (n == 9) {
+        return 2;
+    } else {
+        return n;
+    }
+}
+
+function getRandomInt(max) {
+    return Math.floor((Math.random() * max)) + 1;
+}
+
+const genNums = function () {
+    let num = getRandomInt(7);
+    return [num, checkbound(num + 1) , checkbound(num + 2)];
+}
+
+
+
+const thumbs1 = document.querySelectorAll("#thumbs1 .thumbs");
+const thumbs2 = document.querySelectorAll("#thumbs2 .thumbs");
+
+const picsSlider = function () {
+    const pics = genNums();
+
+    for (let i = 0; i < thumbs1.length; i++) {
+        thumbs1[i].setAttribute("src", `./img/homepage/thumbs1/${pics[i]}.jpeg`);
+        thumbs2[i].setAttribute("src", `./img/homepage/thumbs2/${pics[i]}.jpeg`);
+    }
+
+    for (let i = 0; i < thumbs2.length; i++) {
+        
+    }
+}
+
+// picsSlider()
+setInterval(picsSlider, 4500);
+
+
+    
+
+
+
 
 
