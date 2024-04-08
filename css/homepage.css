@@ -1,54 +1,96 @@
-
-/* HOMEPAGE */
-
-#cont1 {
-    width: 100%;
-    height: 50%;
-    position: relative;
+/******************** HOMEPAGE ********************/
+#part1 {
+  width: 75rem;
+}
+#part1 #intro-message {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  position: relative;
+}
+#part1 #intro-message > p {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: white;
 }
 
-#sun-set {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/sunset.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
+#part2 {
+  background-color: var(--color-primary);
+  position: relative;
+  z-index: 3;
+  width: 75rem;
 }
-
-#welcome-msg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+#part2 #homepage-main {
+  position: relative;
+  z-index: 3;
 }
-
-#welcome-msg p {
-    font-size: 6em;
-    font-weight: bolder;
-    color: white;
+#part2 #homepage-main #about-us {
+  width: 100%;
+  min-height: 50rem;
+  padding: 6rem 3rem 3rem 3rem;
+  margin: 0;
 }
-
-
-#cont2 {
-    height: 100%;
-    position: relative;
+#part2 #homepage-main #about-us #description {
+  width: 100%;
+  height: 100%;
+  color: var(--light-text);
+  flex-direction: column;
 }
-
-#bridge {
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/bridge.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#part2 #homepage-main #about-us #description .cont0 {
+  width: 80%;
+  height: 65%;
+  flex-direction: column;
+  justify-content: space-around;
 }
+#part2 #homepage-main #about-us #description .cont0 h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 15%;
+  text-align: left;
+}
+#part2 #homepage-main #about-us #description .cont0 h3 {
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 15%;
+  text-align: left;
+}
+#part2 #homepage-main #about-us #description .cont0 p {
+  font-size: 1.7rem;
+  width: 100%;
+  height: 70%;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+#part2 #homepage-main #about-us-more {
+  min-height: 50rem;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  margin: 0;
+  padding: 3rem 3rem;
+}
+#part2 #homepage-main #about-us-more h1 {
+  font-size: 4rem;
+  color: var(--color-secondary);
+  margin: 2rem 0 4rem 0;
+}
+#part2 #homepage-main #about-us-more div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+#part2 #homepage-main #about-us-more div div {
+  width: 21rem;
+  height: 29rem;
+}
+#part2 #homepage-main #about-us-more img {
+  width: 90%;
+  height: 80%;
+}/*# sourceMappingURL=homepage.css.map */

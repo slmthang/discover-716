@@ -3,36 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- title -->
-    <title>Discover 716</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="./img/logo-716.png"/>
-    <!-- local-css -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+
+    <!-- local stylesheets -->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/top-nav-bar.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/homepage.css">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- scripts -->    
+    <!-- scripts --> 
+    <script src="./js/scripts.js" defer></script> 
 </head>
 <body>
-    <div>
+
+    <!-- nav-bar -->
+    <nav id="nav-bar">
         <!-- top-nav-bar -->
         <div id="top-nav-bar">
             <div id="top-nav-bar1">
+                <div class="empty"></div>
                 <div id="top-nav-menus">
-                    <div class="top-nav-menu-option" onclick="window.location='https://www.discover716.com/services'">
+                    <div class="top-nav-menu-option center" onclick="window.location='https://www.discover716.com/services'">
                         <p>interns/volunteers</p>
                     </div>
-                    <div class="top-nav-menu-option" onclick="window.location='https://www.discover716.com/partners'">
+                    <div class="top-nav-menu-option center" onclick="window.location='https://www.discover716.com/partners'">
                         <p>partners</p>
                     </div>
-                    <div class="top-nav-menu-option" onclick="window.location='https://www.discover716.com/list-your-business'">
+                    <div class="top-nav-menu-option center" onclick="window.location='https://www.discover716.com/list-your-business'">
                         <p>sponsors</p>
                     </div>
-                    <div class="top-nav-menu-option" onclick="window.location='/views/contact.html'">
+                    <div class="top-nav-menu-option center" onclick="window.location='/views/contact.html'">
                         <p>contact</p>
                     </div>
-                    <div class="top-nav-menu-option" onclick="window.location='https://www.discover716.com/'">
+                    <div class="top-nav-menu-option center" onclick="window.location='https://www.discover716.com/'">
                         <p>about us</p>
                     </div>
                     <div class="top-nav-menu-option socials">
@@ -44,14 +49,14 @@
                 </div>
             </div>
             <div id="top-nav-bar2">
-                <div id="logo-cont">
-                    <div id="logo">
+                <div id="logo-cont" class="center">
+                    <div id="logo" class="center">
                         <img src="./img/logo-716.png" alt="Discover716 Logo" width="100%" height="100%" onclick="window.location='/index.html'">
                     </div>
                 </div>
-                <div id="nav-menus">
-                    <div id="dropdown">
-                        <div class="nav-option">
+                <div id="dropdown-nav-menus" class="center">
+                    <div class="dropdown-nav-menu">
+                        <div class="nav-option center">
                             <p>Events</p>
                         </div>
                         <div class="nav-more-options">
@@ -75,9 +80,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="dropdown">
-                        <div class="nav-option">
-                            <p>Things-To-Do</p>
+                    <div class="dropdown-nav-menu">
+                        <div class="nav-option center">
+                            <p>Things To Do</p>
                         </div>
                         <div class="nav-more-options">
                             <div class="nav-more-option">
@@ -100,8 +105,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="dropdown">
-                        <div class="nav-option">
+                    <div class="dropdown-nav-menu">
+                        <div class="nav-option center">
                             <p>Restaurants</p>
                         </div>
                         <div class="nav-more-options">
@@ -125,8 +130,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="dropdown">
-                        <div class="nav-option">
+                    <div class="dropdown-nav-menu">
+                        <div class="nav-option center">
                             <p>Hotels</p>
                         </div>
                         <div class="nav-more-options">
@@ -150,8 +155,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="dropdown">
-                        <div class="nav-option">
+                    <div class="dropdown-nav-menu">
+                        <div class="nav-option center">
                             <p>Specials</p>
                         </div>
                         <div class="nav-more-options">
@@ -166,8 +171,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="dropdown">
-                        <div class="nav-option" onclick="window.location='https://www.discover716.com/blog-1'">
+                    <div class="dropdown-nav-menu">
+                        <div class="nav-option center" onclick="window.location='https://www.discover716.com/blog-1'">
                             <p>Blogs</p>
                         </div>
                         <div class="nav-more-options" style="display: none;">
@@ -183,24 +188,213 @@
                 </div>
             </div>
         </div>
+    </nav>
+
+    <main>
+        <!-- homepage -->
+        <div id="part1">
+            <div id="intro-message">
+                <p id="welcome-text">WE LIVE & BREATHE BUFFALO, NY</p>
+                <img src="./img/bridge.jpg" alt="" width="100%">
+                <img src="./img/sunset.jpg" alt="" width="100%" style="display: none;">
+            </div>
+        </div>  
         
-        <!-- main-area -->
-        <main id="main-area">
-            <div id="cont1">
-                <div id="sun-set">
+        <div id="part2">
+            <div id="homepage-main">
+                <div id="about-us" class="center">
+                        <div id="description" class="center">
+                            <div class="cont0 center">
+                                <h1>About Us</h1>
+                                <h3 class="textlight">We are Local Supporting Local!</h3>
+                                <p>Discover716 is <span class="textlight">non-profit organization</span> with a two-pronged mission. First, we want to help small businesses and the non-profit community thrive by helping them market themselves and building their brand recognition, knowing that many are resource-constrained, especially due to the pandemic. Second, we are creating internships for college students in a collaborative work environment to help these small businesses and non-profits.</p>
+                                <p>College students across a multitude of disciplines – <span class="textlight">marketing, technology, graphic arts, journalism </span>, and so on – gain invaluable experience with Discover716 helping meet the needs of our “clients.” Mentors help guide the students, but the students have tremendous latitude to tap their creativity and build their portfolio as they worked to build the brand of those who needed our assistance.</p>
+                                <p>Your contribution is essential to helping us fulfill our mission!</p>
+                            </div>
+                        </div>
+                        <!-- <div id="pic-slider" class="center">
+                            <div id="slides" class="center">
+                                <div id="pics" class="center">
+                                    <i id="prevSlide" class="fa-solid fa-chevron-left"></i>
+                                    <i id="nextSlide" class="fa-solid fa-chevron-right"></i>
+                                    <img class="slide" src="./img/sunset.jpg" alt="" >
+                                    <img class="slide" src="./img/logo-716.png" alt="" >
+                                    <img class="slide" src="./img/bridge.jpg" alt="" >
+                                </div>
+                                    
+                            </div>
+                        </div> -->
+                </div>
+                <div id="about-us-more" class="center">
+                    <h1>We are here for the people and the community.</h1>
+                    <div>
+                        <div class="center">
+                            <img src="./img/homepage/1.jpeg" alt="">
+                        </div>
+                        <div class="center">
+                            <img src="./img/homepage/2.jpeg" alt="">
+                        </div>
+                        <div class="center">
+                            <img src="./img/homepage/3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="center">
+                            <img src="./img/homepage/4.jpeg" alt="">
+                        </div>
+                        <div class="center">
+                            <img src="./img/homepage/5.jpeg" alt="">
+                        </div>
+                        <div class="center">
+                            <img src="./img/homepage/6.jpeg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="welcome-msg">
-                <p>WE LIVE & BREATHE BUFFALO, NY</p>
-            </div>
-            <div id="cont2">
-                
-                <div id="bridge">
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <nav>
+            <div id="social-navs" class="center">
+                <div id="apps" class="center">
+                    <div class="center download">
+                        <i class="fa-brands fa-app-store"></i>
+                        <div>
+                            <p>Download on the</p>
+                            <h3>App Store</h3>
+                        </div>
+                    </div>
+                    <div class="center download">
+                        <i class="fa-brands fa-google-play"></i>
+                        <div>
+                            <p>Download on the</p>
+                            <h3>Play Store</h3>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-                
+                <div class="empty">
+
+                </div>
+                <div id="socials" class="center">
+                    <i class="fa-brands fa-facebook" onclick="window.location='https://www.facebook.com/Discover716/'"></i>
+                    <i class="fa-brands fa-instagram" onclick="window.location='https://www.instagram.com/discover716.balancedliving/'"></i>
+                    <i class="fa-brands fa-twitter" onclick="window.location='https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716'"></i>
+                    <i class="fa-brands fa-linkedin" onclick="window.location='https://www.linkedin.com/company/discover716/'"></i>
+                </div>
             </div>
-                
-        </main>
-    </div>
+            <div id="menus" class="center">
+                <div class="menu">
+                    <div class="name">
+                        <h1>Events</h1>
+                    </div>
+                    <ul id="sub-menus">
+                        <li class="sub-menu">
+                            <p>Event 1</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Event 2</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Event 3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="name">
+                        <h1>Things To Do</h1>
+                    </div>
+                    <ul id="sub-menus">
+                        <li class="sub-menu">
+                            <p>Things To Do 1</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Things To Do 2</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Things To Do 3</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Things To Do 4</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Things To Do 5</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Things To Do 6</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="name">
+                        <h1>Restaurants</h1>
+                    </div>
+                    <ul id="sub-menus">
+                        <li class="sub-menu">
+                            <p>Restaurant 1</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Restaurant 2</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Restaurant 3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="name">
+                        <h1>Hotels</h1>
+                    </div>
+                    <ul id="sub-menus">
+                        <li class="sub-menu">
+                            <p>Hotel 1</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Hotel 2</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Hotel 3</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>Hotel 4</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="name">
+                        <h1>Specials</h1>
+                    </div>
+                    <ul id="sub-menus">
+                        <li class="sub-menu">
+                            <p>Tasting Tables</p>
+                        </li>
+                        <li class="sub-menu">
+                            <p>12 Businesses of Christmas</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <div class="name blog">
+                        <h1>Blogs</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="info" class="center">
+                <div id="name" class="center">
+                    <img src="./img/logo-716.png" alt="">
+                </div>
+                <div id="details" class="center">
+                    <ul class="center">
+                        <li id="addr">377 Sweeney Street, North Tonawanda, NY 14120</li>
+                        <li id="phone">(716) 983-2567</li>
+                        <li id="email">716discover@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>

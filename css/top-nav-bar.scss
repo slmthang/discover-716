@@ -1,0 +1,151 @@
+$light: var(--light-text);
+$primary: var(--color-primary); // color_3
+$secondary: var(--color-secondary); // color_4
+$bg1: var(--dark-grey-bg);
+
+
+/********************************* TOP NAV BAR  *********************************/
+
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 4;
+	width: 75rem;
+	padding: 2rem;
+	background-color: $primary;
+
+	#top-nav-bar {
+		position: sticky;
+		top: 0;
+		right: 0;
+
+		// top-nav-bar1
+		#top-nav-bar1 {
+			width: 100%;
+			height: 4rem;
+			display: flex;
+			color: $light;
+			
+			>.empty {
+				width: 20%;
+				height: 4rem;
+			}
+
+			#top-nav-menus {
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+
+				.top-nav-menu-option {
+					font-size: 0.85rem;
+					padding: 0 0.5rem;
+
+					>p {
+						&:hover {
+							cursor: pointer;
+							color: $secondary;
+						}
+					}
+				}
+
+				.top-nav-menu-option.socials {
+					flex: 0 1 200px;
+					max-width: 250px;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					font-size: 1.25rem;
+
+					>i {
+						&:hover {
+							color: $secondary;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+
+		// top-nav-bar2
+		#top-nav-bar2 {
+			width: 100%;
+			height: 10rem;
+			display: flex;
+
+			// logo
+			#logo-cont {
+				width: 9rem;
+				margin-right: 2rem;
+			}
+
+			// dropdown
+			#dropdown-nav-menus {
+				width: 65rem;
+				justify-content: space-around;
+
+				.dropdown-nav-menu {
+					height: 3rem;
+					position: relative;
+					display: flex;
+					width: 9rem;
+					padding: 0;
+
+					&:hover {
+						cursor: pointer;
+
+						.nav-more-options {
+							display: block;
+						}
+
+						.nav-option {
+							color: black;
+						}
+					}
+
+					.nav-option {
+						background-color: $secondary;
+						color: $primary;
+						font-size: 1.1rem;
+						width: 100%;
+						height: 100%;
+					}
+
+					.nav-more-options {
+						padding: 5rem 0 0 0;
+						left: 0;
+						display: none;
+						position: absolute;
+						width: 14rem;
+						z-index: 1;
+
+						.nav-more-option {
+							width: 100%;
+							min-height: 3rem;
+							max-height: fit-content;
+							display: flex;
+							align-items: center;
+							justify-content: flex-start;
+							font-size: 1.1rem;
+							background-color: $primary;
+							padding-left: 0.5rem;
+							color: $light;
+							
+							>p {
+								padding: 4px;
+							}
+
+							&:hover {
+								cursor: pointer;
+								background-color: $secondary;
+								color: black;
+							}
+						}
+					}
+
+
+				}
+			}
+		}
+	}
+}
+	
