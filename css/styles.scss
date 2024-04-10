@@ -7,7 +7,7 @@
 	top: 0;
 	z-index: 4;
 	width: 75rem;
-	padding: 2rem;
+	padding: 1rem;
 	background-color: var(--color-primary);
 	border-left: 0.5px solid var(--shadow-line-b);
 	border-right: 0.5px solid var(--shadow-line-b);
@@ -25,6 +25,14 @@
 			display: flex;
 			color: var(--light-text);
 			
+			#mobile-nav-bar {
+				display: none;
+
+				* {
+					display: none;
+				}
+			}
+
 			>.empty {
 				width: 20%;
 				height: 4rem;
@@ -103,8 +111,8 @@
 
 					.nav-option {
 						color: var(--color-primary);
-						font-size: 1.1rem;
-                        font-weight: bold;
+						font-size: 1rem;
+                        font-weight: 700;
 						width: 100%;
 						height: 100%;
                         justify-content: flex-start;
@@ -196,7 +204,9 @@ footer {
 				}
 			}
 
-			
+			.download.mobile {
+				display: none;
+			}
 
 
 		}

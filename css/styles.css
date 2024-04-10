@@ -4,7 +4,7 @@
   top: 0;
   z-index: 4;
   width: 75rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--color-primary);
   border-left: 0.5px solid var(--shadow-line-b);
   border-right: 0.5px solid var(--shadow-line-b);
@@ -20,6 +20,12 @@
   height: 4rem;
   display: flex;
   color: var(--light-text);
+}
+#nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar {
+  display: none;
+}
+#nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar * {
+  display: none;
 }
 #nav-bar #top-nav-bar #top-nav-bar1 > .empty {
   width: 20%;
@@ -81,8 +87,8 @@
 }
 #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus .dropdown-nav-menu .nav-option {
   color: var(--color-primary);
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 700;
   width: 100%;
   height: 100%;
   justify-content: flex-start;
@@ -159,6 +165,9 @@ footer #social-navs #apps .download:hover {
   cursor: pointer;
   color: var(--color-secondary);
   border-color: var(--color-secondary);
+}
+footer #social-navs #apps .download.mobile {
+  display: none;
 }
 footer #social-navs .empty {
   height: 100%;

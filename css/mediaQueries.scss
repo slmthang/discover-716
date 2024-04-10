@@ -1,0 +1,201 @@
+@media only screen and (min-width: 768px) { /* 48rem */
+    /* tablets and desktop */
+    footer {
+    }
+}
+
+@media only screen and (max-width: 767px) { /* 48rem */
+    /* phones */
+
+    #nav-bar {
+        width: 100%;
+        padding: 1rem;
+
+        #top-nav-bar {
+
+            #top-nav-bar1 {
+                height: 4rem;
+
+                #mobile-nav-bar {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-around;
+
+                    img {
+                        display: block;
+                        height: 4.5rem;
+                    }
+
+                    .empty {
+                        display: block;
+                        width: 70%;
+                    }
+
+                    i {
+                        display: block;
+                        font-size: 3rem;
+                    }
+                }
+
+                >.empty {
+                    display: none;
+                }
+
+                #top-nav-menus {
+                    display: none;
+                }
+            }
+
+            #top-nav-bar2 {
+                display: none;
+                height: 6rem;
+
+                #logo-cont {
+                    width: 15%;
+                }
+
+                #dropdown-nav-menus {
+                    width: 85%;
+                }
+            }
+
+        }
+        
+    }
+
+
+    main {
+        width: 100%;
+
+        #part1 {
+            width: 100%;
+
+            #intro-message {
+                
+                >p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        #part2 {
+            width: 100%;
+            
+            #homepage-main {
+
+                #about-us {
+                    padding: 4rem 2rem 2rem 2rem;
+
+                    #description {
+
+                        .cont0 {
+
+                            h1 {
+                                font-size: 2rem;
+                            }
+
+                            h3 {
+                                font-size: 1.25rem;
+                            }
+
+                            p {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+
+                #about-us-more {
+                    padding: 1.5rem 1.5rem 3rem 1.5rem;
+                    h1 {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+        width: 100%;
+        padding: 2rem 1rem;
+        min-height: 20rem;
+
+        #social-navs {
+           flex-direction: column; 
+           justify-content: center;
+           align-items: center;
+           min-height: 3rem;
+
+            #apps {
+                flex-direction: column;
+                width: 100%;
+                
+                .download {
+                    display: none;
+                    border: none;
+
+                    &:hover {
+                        cursor: auto;
+                        color: var(--light-text)
+                    }
+                }
+
+                .download.mobile {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+
+                    > div {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        i {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    
+                }
+            }
+
+            .empty {
+                display: none;
+            }
+
+            #socials {
+                display: none;
+            }
+
+        }
+
+        #menus {
+            display: none;
+        }
+
+        #info {
+            min-height: 8rem;
+            margin-top: 3rem;
+            #name {
+                display: none;
+            }
+
+            #details {
+
+                ul {
+                    flex-direction: column;
+                    text-align: center;
+                    row-gap: 5px;
+
+                    li {
+                        display: inline;
+                        border: none;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
