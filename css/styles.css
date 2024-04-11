@@ -87,15 +87,14 @@
   border-bottom: 1px solid var(--color-secondary);
 }
 #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus .dropdown-nav-menu .nav-option {
-  color: var(--color-primary);
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 500;
   width: 100%;
   height: 100%;
   justify-content: flex-start;
   padding-left: 10px;
   border-bottom: 1px solid var(--light-text);
-  color: var(--color-secondary);
+  color: var(--light-text);
 }
 #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus .dropdown-nav-menu .nav-more-options {
   padding: 5rem 0 0 0;
@@ -125,6 +124,35 @@
   cursor: pointer;
   background-color: var(--color-secondary);
   color: black;
+}
+
+#nav-burg {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 6.5rem;
+  z-index: 4;
+}
+#nav-burg ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 16rem;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  margin-right: 0.5rem;
+  border: 0.75px solid black;
+}
+#nav-burg ul li {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+#nav-burg ul li:hover {
+  background-color: var(--color-secondary);
+  color: black;
+  cursor: pointer;
 }
 
 /******************** footer ********************/
@@ -208,7 +236,7 @@ footer #menus .menu .name {
   width: 100%;
 }
 footer #menus .menu .name h1 {
-  color: var(--color-secondary);
+  color: var(--light-text);
   font-size: 1rem;
 }
 footer #menus .menu .name h1:hover {

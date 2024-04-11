@@ -32,9 +32,23 @@
                         width: 70%;
                     }
 
+
                     i {
-                        display: block;
                         font-size: 3rem;
+                        
+                        &:hover {
+                            cursor: pointer;
+                            color: var(--color-secondary);
+                        }
+                    }
+
+                    #open {
+                        display: block;
+                        
+                    }
+
+                    #close {
+                        display: none;
                     }
                 }
 
@@ -64,6 +78,7 @@
         
     }
 
+    
 
     main {
         width: 100%;

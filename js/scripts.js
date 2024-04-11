@@ -73,7 +73,7 @@ const shrinkTopNav = function () {
         const navBar2 = document.querySelector("#top-nav-bar2");
         const navBar2_img = document.querySelector("#top-nav-bar2 .logo img");
         
-    if (window.innerWidth > 767) { 
+    if (window.innerWidth > 1200) { 
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             
             // navBar1
@@ -108,3 +108,27 @@ window.onscroll = () => shrinkTopNav();
 /************************************************************/
 
 
+
+/******************** BURG-MENU NAV BAR ********************/
+const hamburgOpen = document.querySelector("#mobile-nav-bar #open");
+const hamburgClose = document.querySelector("#mobile-nav-bar #close");
+const hamburgMenu = document.querySelector("#nav-burg");
+
+
+
+
+hamburgOpen.addEventListener("click", () => {
+    hamburgMenu.style.display = "block";
+    hamburgClose.style.display = "block";
+    hamburgOpen.style.display = "none";
+})
+
+hamburgClose.addEventListener("click", () => {
+    hamburgMenu.style.display = "none";
+    hamburgClose.style.display = "none";
+    hamburgOpen.style.display = "block";
+})
+
+
+
+/************************************************************/

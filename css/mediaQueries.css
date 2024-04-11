@@ -22,8 +22,17 @@
     width: 70%;
   }
   #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar i {
-    display: block;
     font-size: 3rem;
+  }
+  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar i:hover {
+    cursor: pointer;
+    color: var(--color-secondary);
+  }
+  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar #open {
+    display: block;
+  }
+  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar #close {
+    display: none;
   }
   #nav-bar #top-nav-bar #top-nav-bar1 > .empty {
     display: none;
