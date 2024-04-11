@@ -1,6 +1,10 @@
 
 
-@media only screen and (max-width: 767px) { /* 48rem */
+
+
+
+
+@media only screen and (max-width: 1200px) { /* 48rem */
     /* phones */
 
     #nav-bar {
@@ -104,32 +108,14 @@
                 }
 
                 #about-us-more {
-                    padding: 1.5rem 1.5rem 3rem 1.5rem;
+                    padding: 1rem;
+                    min-height: 25rem;
 
                     h1 {
                         font-size: 1.25rem;
+                        margin: 1rem 0 1.5rem 0;
                     }
 
-                    #thumbs {
-                        display: none;
-                    }
-
-                    #thumbs-mobile {
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        margin-bottom: 1rem;
-
-                        > div {
-                            width: 25rem;
-                            height: 31rem;
-
-                            img {
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -189,17 +175,13 @@
 
         }
 
-        #menus {
-            display: none;
-        }
-
         #info {
             min-height: 8rem;
             margin-top: 3rem;
             flex-direction: column;
 
             #name {
-                margin-bottom: 2rem;
+                margin-bottom: 4rem;
             }
 
             #details {
@@ -222,7 +204,107 @@
 }
 
 
+@media only screen and (max-width: 740px) { /* 48rem */
+    /* tablets and desktop */
+    main {
+
+        #part2 {
+            
+            #homepage-main {
+
+                #about-us-more {
+
+                    #thumbs {
+                        display: none;
+                    }
+
+                    #thumbs-mobile {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 1rem;
+
+                        > div {
+                            width: 21rem;
+                            height: 26rem;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media only screen and (max-width: 570px) { /* 48rem */
     /* tablets and desktop */
-    
+    #nav-bar {
+        width: 100%;
+        padding: 1rem;
+
+        #top-nav-bar {
+
+            #top-nav-bar1 {
+                height: 4rem;
+
+                #mobile-nav-bar {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-around;
+
+                    img {
+                        display: block;
+                        height: 4.5rem;
+                    }
+
+                    .empty {
+                        display: block;
+                        width: 70%;
+                    }
+
+                    i {
+                        display: block;
+                        font-size: 3rem;
+                    }
+                }
+
+                >.empty {
+                    display: none;
+                }
+
+                #top-nav-menus {
+                    display: none;
+                }
+            }
+
+            #top-nav-bar2 {
+                display: none;
+                height: 6rem;
+
+                #logo-cont {
+                    width: 15%;
+                }
+
+                #dropdown-nav-menus {
+                    width: 85%;
+                }
+            }
+
+        }
+        
+    }
 }
+
+
+
+
+
+
+
+

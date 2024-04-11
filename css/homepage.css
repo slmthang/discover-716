@@ -44,7 +44,7 @@ main #part2 #homepage-main #about-us #description {
   flex-direction: column;
 }
 main #part2 #homepage-main #about-us #description .cont0 {
-  width: 80%;
+  width: 85%;
   height: 65%;
   flex-direction: column;
   justify-content: space-around;
