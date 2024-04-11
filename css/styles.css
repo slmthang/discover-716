@@ -37,8 +37,9 @@
   justify-content: space-between;
 }
 #nav-bar #top-nav-bar #top-nav-bar1 #top-nav-menus .top-nav-menu-option {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0 0.5rem;
+  font-weight: 300;
 }
 #nav-bar #top-nav-bar #top-nav-bar1 #top-nav-menus .top-nav-menu-option > p:hover {
   cursor: pointer;
@@ -87,8 +88,8 @@
 }
 #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus .dropdown-nav-menu .nav-option {
   color: var(--color-primary);
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 400;
   width: 100%;
   height: 100%;
   justify-content: flex-start;
@@ -220,6 +221,7 @@ footer #menus .menu #sub-menus .sub-menu p:hover {
 footer #info {
   width: 100%;
   height: 8rem;
+  padding: 2rem;
 }
 footer #info #name {
   width: 15%;

@@ -1,8 +1,4 @@
-@media only screen and (min-width: 768px) { /* 48rem */
-    /* tablets and desktop */
-    footer {
-    }
-}
+
 
 @media only screen and (max-width: 767px) { /* 48rem */
     /* phones */
@@ -85,7 +81,7 @@
             #homepage-main {
 
                 #about-us {
-                    padding: 4rem 2rem 2rem 2rem;
+                    padding: 2rem 0 0.5rem 0;
 
                     #description {
 
@@ -93,6 +89,7 @@
 
                             h1 {
                                 font-size: 2rem;
+                                margin: 0.5rem 0 1rem 0;
                             }
 
                             h3 {
@@ -108,8 +105,30 @@
 
                 #about-us-more {
                     padding: 1.5rem 1.5rem 3rem 1.5rem;
+
                     h1 {
                         font-size: 1.25rem;
+                    }
+
+                    #thumbs {
+                        display: none;
+                    }
+
+                    #thumbs-mobile {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 1rem;
+
+                        > div {
+                            width: 25rem;
+                            height: 31rem;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                     }
                 }
             }
@@ -177,8 +196,10 @@
         #info {
             min-height: 8rem;
             margin-top: 3rem;
+            flex-direction: column;
+
             #name {
-                display: none;
+                margin-bottom: 2rem;
             }
 
             #details {
@@ -198,4 +219,10 @@
 
         }
     }
+}
+
+
+@media only screen and (max-width: 570px) { /* 48rem */
+    /* tablets and desktop */
+    
 }

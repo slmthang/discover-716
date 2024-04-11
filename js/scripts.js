@@ -28,40 +28,35 @@ setInterval(changeIntro, 4500);
 /******************** About Us Pictures Slider ********************/
 
 const checkbound = function (n) {
-    if (n == 8) {
-        return 1;
-    } else if (n == 9) {
-        return 2;
+    if (n > 13) {
+        return n % 13;
     } else {
         return n;
     }
 }
 
 function getRandomInt(max) {
-    return Math.floor((Math.random() * max)) + 1;
+    return Math.floor(Math.random() * max) + 1;
 }
 
 const genNums = function () {
-    let num = getRandomInt(7);
-    return [num, checkbound(num + 1) , checkbound(num + 2)];
+    let num = getRandomInt(12);
+    return [num, checkbound(num + 1) , checkbound(num + 2), checkbound(num + 3) , checkbound(num + 4), checkbound(num + 5)];
 }
 
-
-
-const thumbs1 = document.querySelectorAll("#thumbs1 .thumbs");
-const thumbs2 = document.querySelectorAll("#thumbs2 .thumbs");
+const thumbs = document.querySelectorAll("#thumbs .thumbs");
+const thumbsMobile = document.querySelectorAll("#thumbs-mobile .thumbs");
 
 const picsSlider = function () {
     const pics = genNums();
 
-    for (let i = 0; i < thumbs1.length; i++) {
-        thumbs1[i].setAttribute("src", `./img/homepage/thumbs1/${pics[i]}.jpeg`);
-        thumbs2[i].setAttribute("src", `./img/homepage/thumbs2/${pics[i]}.jpeg`);
-    }
-
-    for (let i = 0; i < thumbs2.length; i++) {
-        
-    }
+    if (window.innerWidth > 800) {
+        for (let i = 0; i < thumbs.length; i++) {
+            thumbs[i].setAttribute("src", `./img/homepage/thumbs/${pics[i]}.jpeg`);
+        }
+    } else {
+        thumbsMobile[0].setAttribute("src", `./img/homepage/thumbs/${pics[0]}.jpeg`);
+    }  
 }
 
 // picsSlider()

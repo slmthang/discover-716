@@ -80,7 +80,7 @@ main {
 							font-size: 1.7rem;
 							width: 100%;
 							height: 70%;
-							text-align: left;
+							text-align: justify;
 							margin-bottom: 3rem;
 						}
 					}
@@ -100,7 +100,7 @@ main {
 					margin: 2rem 0 4rem 0;
 				}
 				
-				div {
+				#thumbs {
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: space-around;
@@ -108,16 +108,21 @@ main {
 					height: 100%;
 					margin-bottom: 1rem;
 
-					div {
+					> div {
 						width: 21rem;
 						height: 29rem;
+
+						img {
+							width: 90%;
+							height: 80%;
+						}
 					}
 				}
 
-				img {
-					width: 90%;
-					height: 80%;
+				#thumbs-mobile {
+					display: none;
 				}
+				
 			}
 		}
 	}

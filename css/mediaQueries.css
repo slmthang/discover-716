@@ -1,6 +1,3 @@
-@media only screen and (min-width: 768px) { /* 48rem */
-  /* tablets and desktop */
-}
 @media only screen and (max-width: 767px) { /* 48rem */
   /* phones */
   #nav-bar {
@@ -57,10 +54,11 @@
     width: 100%;
   }
   main #part2 #homepage-main #about-us {
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 2rem 0 0.5rem 0;
   }
   main #part2 #homepage-main #about-us #description .cont0 h1 {
     font-size: 2rem;
+    margin: 0.5rem 0 1rem 0;
   }
   main #part2 #homepage-main #about-us #description .cont0 h3 {
     font-size: 1.25rem;
@@ -73,6 +71,23 @@
   }
   main #part2 #homepage-main #about-us-more h1 {
     font-size: 1.25rem;
+  }
+  main #part2 #homepage-main #about-us-more #thumbs {
+    display: none;
+  }
+  main #part2 #homepage-main #about-us-more #thumbs-mobile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+  main #part2 #homepage-main #about-us-more #thumbs-mobile > div {
+    width: 25rem;
+    height: 31rem;
+  }
+  main #part2 #homepage-main #about-us-more #thumbs-mobile > div img {
+    width: 100%;
+    height: 100%;
   }
   footer {
     width: 100%;
@@ -122,9 +137,10 @@
   footer #info {
     min-height: 8rem;
     margin-top: 3rem;
+    flex-direction: column;
   }
   footer #info #name {
-    display: none;
+    margin-bottom: 2rem;
   }
   footer #info #details ul {
     flex-direction: column;
@@ -135,4 +151,7 @@
     display: inline;
     border: none;
   }
+}
+@media only screen and (max-width: 570px) { /* 48rem */
+  /* tablets and desktop */
 }/*# sourceMappingURL=mediaQueries.css.map */
