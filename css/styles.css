@@ -235,20 +235,20 @@ footer #menus .menu .name {
   margin-bottom: 1rem;
   width: 100%;
 }
-footer #menus .menu .name h1 {
+footer #menus .menu .name p {
   color: var(--light-text);
   font-size: 1rem;
 }
-footer #menus .menu .name h1:hover {
+footer #menus .menu .name p:hover {
   cursor: pointer;
 }
-footer #menus .menu #sub-menus .sub-menu {
+footer #menus .menu .sub-menus .sub-menu {
   margin-bottom: 0.75rem;
   padding-left: 0.25rem;
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
-footer #menus .menu #sub-menus .sub-menu p:hover {
+footer #menus .menu .sub-menus .sub-menu p:hover {
   cursor: pointer;
   color: var(--color-secondary);
 }
