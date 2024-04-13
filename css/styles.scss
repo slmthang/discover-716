@@ -242,9 +242,14 @@
 
 		.donate-btn {
 
+			border: 0.5px solid var(--light-text);
+			padding: 0.2rem 0.7rem;
+			border-radius: 1rem;
+
 			&:hover {
 				cursor: pointer;
 				color: var(--color-secondary);
+				border: 0.5px solid var(--color-secondary);
 			}
 
 			> i {
@@ -332,19 +337,20 @@
 		}	
 
 		.donate-btn {
-			border-radius: 0.75rem;
-			width: 10rem;
-			height: 2.5rem;
-			background-color: var(--color-primary);
+			border: 0.5px solid var(--light-text);
+			padding: 0.2rem 0.7rem;
+			border-radius: 1rem;
 
 			&:hover {
 				cursor: pointer;
 				color: var(--color-secondary);
+				border: 0.5px solid var(--color-secondary);
 			}
 
 			> i {
 				margin-left: 0.5rem;
 			}
+
 		}
 	}
 }

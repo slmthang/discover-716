@@ -274,8 +274,8 @@
                         margin-bottom: 1rem;
 
                         > div {
-                            width: 21rem;
-                            height: 26rem;
+                            width: 20rem;
+                            height: 25rem;
 
                             img {
                                 width: 100%;
@@ -349,9 +349,25 @@
         
     }
 
+    main {
 
+        #part2 {
+            
+            #homepage-main {
 
+                #about-us-more {
 
+                    #thumbs-mobile {
+
+                        > div {
+                            width: 16rem;
+                            height: 20rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     #mobile-nav-menu {
 
@@ -367,6 +383,32 @@
 
             .donate-btn {
                 font-size: 0.85rem;
+            }
+        }
+    }
+
+    footer {
+        #social-navs {
+
+            #apps {
+                
+                .download.mobile {
+                    .apps {
+                        a {
+                            i {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                    .socials {
+                        a {
+                            i {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }

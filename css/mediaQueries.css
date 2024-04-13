@@ -190,8 +190,8 @@
     margin-bottom: 1rem;
   }
   main #part2 #homepage-main #about-us-more #thumbs-mobile > div {
-    width: 21rem;
-    height: 26rem;
+    width: 20rem;
+    height: 25rem;
   }
   main #part2 #homepage-main #about-us-more #thumbs-mobile > div img {
     width: 100%;
@@ -241,6 +241,10 @@
   #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus {
     width: 85%;
   }
+  main #part2 #homepage-main #about-us-more #thumbs-mobile > div {
+    width: 16rem;
+    height: 20rem;
+  }
   #mobile-nav-menu .menus1 {
     right: initial;
     text-align: center;
@@ -250,5 +254,11 @@
   }
   #mobile-nav-menu .menus2 .donate-btn {
     font-size: 0.85rem;
+  }
+  footer #social-navs #apps .download.mobile .apps a i {
+    font-size: 1.8rem;
+  }
+  footer #social-navs #apps .download.mobile .socials a i {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=mediaQueries.css.map */

@@ -192,9 +192,15 @@
   cursor: pointer;
   color: var(--color-secondary);
 }
+#mobile-nav-menu .menus2 .donate-btn {
+  border: 0.5px solid var(--light-text);
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
+}
 #mobile-nav-menu .menus2 .donate-btn:hover {
   cursor: pointer;
   color: var(--color-secondary);
+  border: 0.5px solid var(--color-secondary);
 }
 #mobile-nav-menu .menus2 .donate-btn > i {
   margin-left: 0.5rem;
@@ -264,14 +270,14 @@
   font-size: 1.2rem;
 }
 #welcome-pop-up #pop-up-msg .donate-btn {
-  border-radius: 0.75rem;
-  width: 10rem;
-  height: 2.5rem;
-  background-color: var(--color-primary);
+  border: 0.5px solid var(--light-text);
+  padding: 0.2rem 0.7rem;
+  border-radius: 1rem;
 }
 #welcome-pop-up #pop-up-msg .donate-btn:hover {
   cursor: pointer;
   color: var(--color-secondary);
+  border: 0.5px solid var(--color-secondary);
 }
 #welcome-pop-up #pop-up-msg .donate-btn > i {
   margin-left: 0.5rem;
