@@ -14,6 +14,7 @@
 
 :root {
     --color-primary: #323b8c; /* blue color */
+    --color-primary-dark: #0a0b1b;
     --color-secondary: #e5003d; /* red color */
     --light-text: #a2a6cf; /* light text color */
     --dark-grey-bg: #383838; /* dark grey color */

@@ -21,7 +21,6 @@ function changeIntro() {
 // changeIntro()
 setInterval(changeIntro, 4500);
 
-/************************************************************/
 
 
 
@@ -62,63 +61,61 @@ const picsSlider = function () {
 // picsSlider()
 setInterval(picsSlider, 4500);
 
-/************************************************************/
 
 
 
 /******************** SHRINK NAV BAR ********************/
 
-const shrinkTopNav = function () {
-    const navBar1 = document.getElementById("top-nav-bar1");
-        const navBar2 = document.querySelector("#top-nav-bar2");
-        const navBar2_img = document.querySelector("#top-nav-bar2 .logo img");
+// const shrinkTopNav = function () {
+//     const navBar1 = document.getElementById("top-nav-bar1");
+//         const navBar2 = document.querySelector("#top-nav-bar2");
+//         const navBar2_img = document.querySelector("#top-nav-bar2 .logo img");
         
-    if (window.innerWidth > 1200) { 
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+//     if (window.innerWidth > 1200) { 
+//         if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
             
-            // navBar1
-            navBar1.style.height = "2rem"; 
+//             // navBar1
+//             navBar1.style.height = "2rem"; 
 
-            // navBar2
-            navBar2.style.height = "6rem";
+//             // navBar2
+//             navBar2.style.height = "6rem";
 
-            // navBar2_img
-            navBar2_img.style.width = "60%";
-            navBar2_img.style.height = "60%";
+//             // navBar2_img
+//             navBar2_img.style.width = "60%";
+//             navBar2_img.style.height = "60%";
 
 
-        } else {
-            // navBar1
-            navBar1.style.height = "3rem"; 
+//         } else {
+//             // navBar1
+//             navBar1.style.height = "3rem"; 
 
-            // navBar2
-            navBar2.style.height = "10rem";
+//             // navBar2
+//             navBar2.style.height = "10rem";
 
-            // navBar2_img
-            navBar2_img.style.width = "100%";
-            navBar2_img.style.height = "100%";
+//             // navBar2_img
+//             navBar2_img.style.width = "100%";
+//             navBar2_img.style.height = "100%";
 
-        }
-    }
-}
+//         }
+//     }
+// }
 
-// shrinkTopNav()
-window.onscroll = () => shrinkTopNav();
+// // shrinkTopNav()
+// window.onscroll = () => shrinkTopNav();
 
-/************************************************************/
 
 
 
 /******************** BURG-MENU NAV BAR ********************/
-const hamburgOpen = document.querySelector("#mobile-nav-bar #open");
-const hamburgClose = document.querySelector("#mobile-nav-bar #close");
-const hamburgMenu = document.querySelector("#nav-burg");
+const hamburgOpen = document.querySelector("#mobile-nav-bar .open");
+const hamburgClose = document.querySelector("#mobile-nav-bar .close");
+const hamburgMenu = document.querySelector("#mobile-nav-menu");
 
 
 
 
 hamburgOpen.addEventListener("click", () => {
-    hamburgMenu.style.display = "block";
+    hamburgMenu.style.display = "flex";
     hamburgClose.style.display = "block";
     hamburgOpen.style.display = "none";
 })
@@ -131,4 +128,18 @@ hamburgClose.addEventListener("click", () => {
 
 
 
-/************************************************************/
+
+/******************** POP-UP-WINDOW ********************/
+
+const closePopUp = function() {
+
+    const closeBtn = document.querySelector("#welcome-pop-up .close");
+    const popUpWindow = document.querySelector("#welcome-pop-up");
+
+    closeBtn.addEventListener("click", () => {
+        popUpWindow.style.display = "none";
+    })
+
+}
+
+closePopUp();

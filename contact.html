@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/styles.css">
     
-    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/contact.css">
 
     <link rel="stylesheet" href="./css/mediaQueries.css">
 
@@ -219,75 +219,117 @@
         </ul>
     </nav>
 
-    <!-- main -->
+    <!-- contact -->
     <main>
-        <!-- homepage -->
-        <div id="part1">
-            <div id="intro-message">
-                <p id="welcome-text">WE LIVE & BREATHE BUFFALO, NY</p>
-                <img src="./img/bridge.jpg" alt="" >
-                <img src="./img/sunset.jpg" alt="" style="display: none;">
-            </div>
-        </div>  
+        <section id="contact">
+            <div id="contact-container">
+                <div class="main-title">
+                    <p>Contact Us</p>
+                </div>
+                <div id="contact-content-con">
+    
+                    <div class="left-contact">
+                        <div class="center">
+                            <h4>Our Contacts</h4>
+                            <p>
+                                Below are our contacts. <br />
+                                You can also contact us by filling the form.
+                            </p>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <p>
+                                        Location: 377 Sweeney St, North Tonawanda, NY 14120
+                                    </p>
+                                </div>
         
-        <div id="part2">
-            <div id="homepage-main">
-                <div id="about-us" class="center">
-                        <div id="description" class="center">
-                            <div class="cont0 center">
-                                <h1 class="textlight">About Us</h1>
-                                <h3 class="textlight">We are Local Supporting Local!</h3>
-                                <p>Discover716 is <span class="textlight">non-profit organization</span> with a two-pronged mission. First, we want to help small businesses and the non-profit community thrive by helping them market themselves and building their brand recognition, knowing that many are resource-constrained, especially due to the pandemic. Second, we are creating internships for college students in a collaborative work environment to help these small businesses and non-profits.</p>
-                                <p>College students across a multitude of disciplines – <span class="textlight">marketing, technology, graphic arts, journalism </span>, and so on – gain invaluable experience with Discover716 helping meet the needs of our “clients.” Mentors help guide the students, but the students have tremendous latitude to tap their creativity and build their portfolio as they worked to build the brand of those who needed our assistance.</p>
-                                <p>Your contribution is essential to helping us fulfill our mission!</p>
-                            </div>
-                        </div>
-                </div>
-                <div id="about-us-more" class="center">
-                    <h1>We are here for the people and the community.</h1>
-                    <div id="thumbs">
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/1.jpeg" alt="">
-                        </div>
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/2.jpeg" alt="">
-                        </div>
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/3.jpeg" alt="">
-                        </div>
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/4.jpeg" alt="">
-                        </div>
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/2.jpeg" alt="">
-                        </div>
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/6.jpeg" alt="">
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <p>
+                                        Email: discover716@gmail.com
+                                    </p>
+                                </div>
+        
+                                <div class="contact-item">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>                                      
+                                    </div>
+                                    <p>
+                                        Phone: 716-983-2567
+                                    </p>
+                                </div>
+                            </div> 
+                            <div class="contact-socials">
+                                <div class="contact-social">
+                                    <a href="https://www.facebook.com/Discover716/" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-social">
+                                    <a href="https://www.instagram.com/discover716.balancedliving/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-social">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716" target="_blank">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="contact-social">
+                                    <a href="https://www.linkedin.com/company/discover716/" target="_blank">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div> 
                         </div>
                     </div>
-                    <div id="thumbs-mobile" class="center">
-                        <div class="center">
-                            <img class="thumbs" src="./img/homepage/thumbs/6.jpeg" alt="">
-                        </div>
+    
+                    <div class="right-contact">
+                        <form action="https://formspree.io/f/xleqponl" class="contact-form" method="POST">
+                            <div id="fields">
+                                <div class="input-control name-email">
+                                    <input type="text" name="name" placeholder="Name" required>
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="input-control">
+                                    <input type="text" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="input-control">
+                                    <textarea name="message" cols="30" rows="10" placeholder="Enter Message Here..."></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <div id="submit">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </div>
+                                
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
+            
+        </section>
     </main>
+    
     
     <!-- footer -->
     <footer>
         <nav>
             <div id="social-navs" class="center">
                 <div id="apps" class="center">
-                    <div class="center download">
+                    <div class="center download" onclick="window.location='https://apps.apple.com/us/app/discover-716/id1198812837'">
                         <i class="fa-brands fa-app-store"></i>
                         <div>
                             <p>Download on the</p>
                             <h3>App Store</h3>
                         </div>
                     </div>
-                    <div class="center download">
+                    <div class="center download" onclick="window.location='https://play.google.com/store/apps/details?id=com.emveedesign.discover716&pcampaignid=web_share&pli=1'">
                         <i class="fa-brands fa-google-play"></i>
                         <div>
                             <p>Download on the</p>
@@ -328,7 +370,7 @@
                     <div class="name">
                         <p>Events</p>
                     </div>
-                    <ul id="sub-menus">
+                    <ul class="sub-menus">
                         <li class="sub-menu">
                             <p>Event 1</p>
                         </li>

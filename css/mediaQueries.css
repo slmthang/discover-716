@@ -12,26 +12,28 @@
     align-items: center;
     width: 100%;
     justify-content: space-around;
+    position: relative;
   }
   #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar img {
     display: block;
+    width: 4.5rem;
     height: 4.5rem;
+    position: absolute;
+    left: 1rem;
   }
   #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar .empty {
     display: block;
     width: 70%;
   }
-  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar i {
+  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar .open, #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar .close {
     font-size: 3rem;
+    position: absolute;
+    right: 1rem;
   }
-  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar i:hover {
-    cursor: pointer;
-    color: var(--color-secondary);
-  }
-  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar #open {
+  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar .open {
     display: block;
   }
-  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar #close {
+  #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar .close {
     display: none;
   }
   #nav-bar #top-nav-bar #top-nav-bar1 > .empty {
@@ -107,17 +109,50 @@
     color: var(--light-text);
   }
   footer #social-navs #apps .download.mobile {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  footer #social-navs #apps .download.mobile > div {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  footer #social-navs #apps .download.mobile > div i {
-    font-size: 1.8rem;
+  footer #social-navs #apps .download.mobile * {
+    display: block;
+  }
+  footer #social-navs #apps .download.mobile .apps {
+    display: flex;
+    justify-content: space-around;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 0;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
+  }
+  footer #social-navs #apps .download.mobile .apps a {
+    text-decoration: none;
+    color: var(--light-text);
+  }
+  footer #social-navs #apps .download.mobile .apps a i {
+    font-size: 2.5rem;
+  }
+  footer #social-navs #apps .download.mobile .apps a:hover {
+    color: var(--color-secondary);
+    cursor: pointer;
+  }
+  footer #social-navs #apps .download.mobile .socials {
+    display: flex;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    -moz-column-gap: 0.7rem;
+         column-gap: 0.7rem;
+  }
+  footer #social-navs #apps .download.mobile .socials a {
+    text-decoration: none;
+    color: var(--light-text);
+  }
+  footer #social-navs #apps .download.mobile .socials a i {
+    font-size: 2.5rem;
+  }
+  footer #social-navs #apps .download.mobile .socials a:hover {
+    color: var(--color-secondary);
+    cursor: pointer;
   }
   footer #social-navs .empty {
     display: none;
@@ -205,5 +240,15 @@
   }
   #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus {
     width: 85%;
+  }
+  #mobile-nav-menu .menus1 {
+    right: initial;
+    text-align: center;
+  }
+  #mobile-nav-menu .menus2 .apps, #mobile-nav-menu .menus2 .socials {
+    font-size: 1.5rem;
+  }
+  #mobile-nav-menu .menus2 .donate-btn {
+    font-size: 0.85rem;
   }
 }/*# sourceMappingURL=mediaQueries.css.map */

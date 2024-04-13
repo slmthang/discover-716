@@ -36,13 +36,8 @@
                 <div id="mobile-nav-bar">
                     <img src="./img/logo-716.png" alt="Discover716 Logo" onclick="window.location='/index.html'">
                     <div class="empty"></div>
-                    <div class="open">
-                        <i class="fa-solid fa-bars"></i> 
-                    </div>
-                    <div class="close">
-                        <i class="fa-solid fa-x"></i>   
-                    </div>
-                                  
+                    <i id="open" class="fa-solid fa-bars"></i>   
+                    <i id="close" class="fa-solid fa-x"></i>                 
                 </div>
                 <div class="empty"></div>
                 <div id="top-nav-menus">
@@ -65,18 +60,10 @@
                         <p>about us</p>
                     </div>
                     <div class="top-nav-menu-option socials">
-                        <a href="https://www.facebook.com/Discover716/">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/discover716.balancedliving/">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/discover716/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
+                        <i class="fa-brands fa-facebook" onclick="window.location='https://www.facebook.com/Discover716/'"></i>
+                        <i class="fa-brands fa-instagram" onclick="window.location='https://www.instagram.com/discover716.balancedliving/'"></i>
+                        <i class="fa-brands fa-twitter" onclick="window.location='https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716'"></i>
+                        <i class="fa-brands fa-linkedin" onclick="window.location='https://www.linkedin.com/company/discover716/'"></i>
                     </div>
                 </div>
             </div>
@@ -221,43 +208,14 @@
             </div>
         </div>
     </nav>
-
-
-    <nav id="mobile-nav-menu" class="center">
-        <ul class="center menus1">
-            <li class="menu">Events</li>
-            <li class="menu">Things To Do</li>
-            <li class="menu">Restaurants</li>
-            <li class="menu">Hotels</li>
-            <li class="menu">Specials</li>
-            <li class="menu">Blogs</li>
-        </ul>
-        <ul class="menus2">
-            <div class="center apps">
-                <a class="center download" href="https://apps.apple.com/us/app/discover-716/id1198812837" ">
-                    <i class="fa-brands fa-app-store"></i>
-                </a>
-                <a class="center download" href="https://play.google.com/store/apps/details?id=com.emveedesign.discover716&pcampaignid=web_share&pli=1" ">
-                    <i class="fa-brands fa-google-play"></i>
-                </a>
-            </div>
-            <div class="donate-btn center"> Donate <i class="fa-solid fa-heart"></i></div>
-            <div class="center socials">
-                <a href="https://www.facebook.com/Discover716/">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/discover716.balancedliving/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/discover716/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
-           
-
+    <nav id="nav-burg">
+        <ul>
+            <li>Events</li>
+            <li>Things To Do</li>
+            <li>Restaurants</li>
+            <li>Hotels</li>
+            <li>Specials</li>
+            <li>Blogs</li>
         </ul>
     </nav>
 
@@ -317,65 +275,39 @@
         </section>
     </main>
     
-    <!-- pop up -->
-    <div id="welcome-pop-up" class="center">
-        <div id="pop-up-msg" class="center">
-            <div class="close">
-                <i class="fa-solid fa-x"></i>   
-            </div>
-            <img src="./img/logo-716.png" alt="Discover716 Logo" onclick="window.location='/index.html'">
-            <div id="msg-text" class="center">
-                <h1>Welcome!</h1>
-                <h2>Help Us Support Local & Non-profits!</h2>
-                <p>Discover 716 is a nonprofit organization in the 716 area which helps support local businesses, encourages business education through scholarships and internships, and gives back to other local non-profits.</p>
-            </div>
-            <div class="donate-btn center">Donate <i class="fa-solid fa-heart"></i></div>
-        </div>
-    </div>
-
     <!-- footer -->
     <footer>
         <nav>
             <div id="social-navs" class="center">
                 <div id="apps" class="center">
-                    <a class="center download" href="https://apps.apple.com/us/app/discover-716/id1198812837" ">
+                    <div class="center download" onclick="window.location='https://apps.apple.com/us/app/discover-716/id1198812837'">
                         <i class="fa-brands fa-app-store"></i>
                         <div>
                             <p>Download on the</p>
                             <h3>App Store</h3>
                         </div>
-                    </a>
-                    <a class="center download" href="https://play.google.com/store/apps/details?id=com.emveedesign.discover716&pcampaignid=web_share&pli=1" ">
+                    </div>
+                    <div class="center download" onclick="window.location='https://play.google.com/store/apps/details?id=com.emveedesign.discover716&pcampaignid=web_share&pli=1'">
                         <i class="fa-brands fa-google-play"></i>
                         <div>
                             <p>Download on the</p>
                             <h3>Play Store</h3>
                         </div>
-                    </a>
+                    </div>
 
                     <div class="center download mobile">
-                        <div class="apps">
-                            <a class="center" href="https://apps.apple.com/us/app/discover-716/id1198812837" ">
+                        <div>
+                            <div>
                                 <i class="fa-brands fa-app-store"></i>
-                            </a>
-                            <a class="center" href="https://play.google.com/store/apps/details?id=com.emveedesign.discover716&pcampaignid=web_share&pli=1" ">
                                 <i class="fa-brands fa-google-play"></i>
-                            </a>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-facebook" onclick="window.location='https://www.facebook.com/Discover716/'"></i>
+                                <i class="fa-brands fa-instagram" onclick="window.location='https://www.instagram.com/discover716.balancedliving/'"></i>
+                                <i class="fa-brands fa-twitter" onclick="window.location='https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716'"></i>
+                                <i class="fa-brands fa-linkedin" onclick="window.location='https://www.linkedin.com/company/discover716/'"></i>
+                            </div>
                             
-                        </div>
-                        <div class="socials">
-                            <a href="https://www.facebook.com/Discover716/">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="https://www.instagram.com/discover716.balancedliving/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/discover716/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
                         </div>
                     </div>
                     
@@ -385,18 +317,10 @@
 
                 </div>
                 <div id="socials" class="center">
-                    <a href="https://www.facebook.com/Discover716/">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/discover716.balancedliving/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/discover716/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
+                    <i class="fa-brands fa-facebook" onclick="window.location='https://www.facebook.com/Discover716/'"></i>
+                    <i class="fa-brands fa-instagram" onclick="window.location='https://www.instagram.com/discover716.balancedliving/'"></i>
+                    <i class="fa-brands fa-twitter" onclick="window.location='https://twitter.com/i/flow/login?redirect_after_login=%2F716discover716'"></i>
+                    <i class="fa-brands fa-linkedin" onclick="window.location='https://www.linkedin.com/company/discover716/'"></i>
                 </div>
             </div>
             <div id="menus">

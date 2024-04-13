@@ -17,14 +17,14 @@
 }
 #nav-bar #top-nav-bar #top-nav-bar1 {
   width: 100%;
-  height: 4rem;
+  height: 2rem;
   display: flex;
   color: var(--light-text);
 }
 #nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar {
   display: none;
 }
-#nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar * {
+#nav-bar #top-nav-bar #top-nav-bar1 #mobile-nav-bar > * {
   display: none;
 }
 #nav-bar #top-nav-bar #top-nav-bar1 > .empty {
@@ -53,18 +53,29 @@
   align-items: center;
   font-size: 1.5rem;
 }
-#nav-bar #top-nav-bar #top-nav-bar1 #top-nav-menus .top-nav-menu-option.socials > i:hover {
+#nav-bar #top-nav-bar #top-nav-bar1 #top-nav-menus .top-nav-menu-option.socials a {
+  text-decoration: none;
+  color: var(--light-text);
+}
+#nav-bar #top-nav-bar #top-nav-bar1 #top-nav-menus .top-nav-menu-option.socials a > i:hover {
   color: var(--color-secondary);
   cursor: pointer;
 }
 #nav-bar #top-nav-bar #top-nav-bar2 {
   width: 100%;
-  height: 10rem;
+  height: 6rem;
   display: flex;
 }
 #nav-bar #top-nav-bar #top-nav-bar2 #logo-cont {
   width: 9rem;
   margin-right: 2rem;
+}
+#nav-bar #top-nav-bar #top-nav-bar2 #logo-cont:hover {
+  cursor: pointer;
+}
+#nav-bar #top-nav-bar #top-nav-bar2 #logo-cont > div > img {
+  width: 5rem;
+  height: 5rem;
 }
 #nav-bar #top-nav-bar #top-nav-bar2 #dropdown-nav-menus {
   width: 65rem;
@@ -126,33 +137,144 @@
   color: black;
 }
 
-#nav-burg {
+#mobile-nav-menu {
   display: none;
   position: fixed;
+  border-top: 1rem solid var(--color-primary-dark);
+  top: 6rem;
   height: 100vh;
-  width: 100%;
-  top: 6.5rem;
-  z-index: 4;
-}
-#nav-burg ul {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 16rem;
+  width: 100vw;
   background-color: var(--color-primary);
-  padding: 1rem;
-  margin-right: 0.5rem;
-  border: 0.75px solid black;
+  z-index: 6;
 }
-#nav-burg ul li {
+#mobile-nav-menu .menus1 {
+  width: 12rem;
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  flex-direction: column;
   color: var(--light-text);
-  margin-bottom: 0.5rem;
-  padding: 1rem;
 }
-#nav-burg ul li:hover {
-  background-color: var(--color-secondary);
-  color: black;
+#mobile-nav-menu .menus1 .menu {
+  padding: 1rem;
+  width: 100%;
+}
+#mobile-nav-menu .menus1 .menu:hover {
+  color: var(--color-secondary);
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+#mobile-nav-menu .menus2 {
+  width: 100%;
+  width: 100%;
+  padding: 2rem 1rem;
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-text);
+  position: absolute;
+  bottom: 7rem;
+}
+#mobile-nav-menu .menus2 .apps {
+  font-size: 2rem;
+  padding-left: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+#mobile-nav-menu .menus2 .apps > a {
+  text-decoration: none;
+  color: var(--light-text);
+}
+#mobile-nav-menu .menus2 .apps > a:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+#mobile-nav-menu .menus2 .donate-btn:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+#mobile-nav-menu .menus2 .donate-btn > i {
+  margin-left: 0.5rem;
+}
+#mobile-nav-menu .menus2 .socials {
+  font-size: 2rem;
+  padding-right: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+#mobile-nav-menu .menus2 .socials > a {
+  text-decoration: none;
+  color: var(--light-text);
+}
+#mobile-nav-menu .menus2 .socials > a:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+#welcome-pop-up {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+}
+#welcome-pop-up #pop-up-msg {
+  position: relative;
+  width: 45rem;
+  min-height: 30rem;
+  background-color: var(--color-primary-dark);
+  flex-direction: column;
+  color: var(--light-text);
+}
+#welcome-pop-up #pop-up-msg .close {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  font-size: 1.75rem;
+}
+#welcome-pop-up #pop-up-msg .close :hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+#welcome-pop-up #pop-up-msg img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+#welcome-pop-up #pop-up-msg #msg-text {
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+#welcome-pop-up #pop-up-msg #msg-text h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+#welcome-pop-up #pop-up-msg #msg-text h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+}
+#welcome-pop-up #pop-up-msg #msg-text p {
+  width: 80%;
+  font-size: 1.2rem;
+}
+#welcome-pop-up #pop-up-msg .donate-btn {
+  border-radius: 0.75rem;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: var(--color-primary);
+}
+#welcome-pop-up #pop-up-msg .donate-btn:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+#welcome-pop-up #pop-up-msg .donate-btn > i {
+  margin-left: 0.5rem;
 }
 
 /******************** footer ********************/
@@ -185,17 +307,19 @@ footer #social-navs #apps {
 footer #social-navs #apps .download {
   border-radius: 1rem;
   border: 1px solid white;
-  padding: 0.5rem 0.7rem;
+  padding: 0.7rem 0.9rem;
   background-color: bg1;
-}
-footer #social-navs #apps .download i {
-  font-size: 3rem;
-  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--light-text);
 }
 footer #social-navs #apps .download:hover {
   cursor: pointer;
   color: var(--color-secondary);
   border-color: var(--color-secondary);
+}
+footer #social-navs #apps .download i {
+  font-size: 3rem;
+  margin-right: 1rem;
 }
 footer #social-navs #apps .download.mobile {
   display: none;
@@ -209,10 +333,12 @@ footer #social-navs #socials {
   width: 35%;
   justify-content: space-around;
 }
-footer #social-navs #socials i {
+footer #social-navs #socials a {
   font-size: 3rem;
+  text-decoration: none;
+  color: var(--light-text);
 }
-footer #social-navs #socials i:hover {
+footer #social-navs #socials a:hover {
   cursor: pointer;
   color: var(--color-secondary);
 }
@@ -256,6 +382,7 @@ footer #info {
   width: 100%;
   height: 8rem;
   padding: 2rem;
+  text-decoration: none;
 }
 footer #info #name {
   width: 15%;

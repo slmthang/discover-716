@@ -21,10 +21,14 @@
                     align-items: center;
                     width: 100%;
                     justify-content: space-around;
+                    position: relative;
 
                     img {
                         display: block;
-                        height: 4.5rem;
+                        width: 4.5rem;
+			            height: 4.5rem;
+                        position: absolute;
+					    left: 1rem;
                     }
 
                     .empty {
@@ -32,22 +36,17 @@
                         width: 70%;
                     }
 
-
-                    i {
+                    .open, .close {
                         font-size: 3rem;
-                        
-                        &:hover {
-                            cursor: pointer;
-                            color: var(--color-secondary);
-                        }
+                        position: absolute;
+                        right: 1rem;
                     }
 
-                    #open {
+                    .open {
                         display: block;
-                        
                     }
 
-                    #close {
+                    .close {
                         display: none;
                     }
                 }
@@ -163,20 +162,55 @@
                 }
 
                 .download.mobile {
-                    display: flex;
-                    flex-direction: row;
                     width: 100%;
+                    display: flex;
+                    justify-content: space-between;
 
-                    > div {
-                        width: 100%;
+                    * {
+                        display: block;
+                    }
+
+                    .apps {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: space-around;
+                        min-height: fit-content;
+                        padding: 0;
+                        column-gap: 0.7rem;
 
-                        i {
-                            font-size: 1.8rem;
+                        a {
+                            text-decoration: none;
+                            color: var(--light-text);
+
+                            i {
+                                font-size: 2.5rem;
+                            }
+
+                            &:hover {
+                                color: var(--color-secondary);
+                                cursor: pointer;
+                            }
                         }
                     }
-                    
+
+                    .socials {
+                        display: flex;
+                        min-height: fit-content;
+                        column-gap: 0.7rem;
+
+                        a {
+                            text-decoration: none;
+                            color: var(--light-text);
+
+                            i {
+                                font-size: 2.5rem;
+                            }
+
+                            &:hover {
+                                color: var(--color-secondary);
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -313,6 +347,28 @@
 
         }
         
+    }
+
+
+
+
+
+    #mobile-nav-menu {
+
+        .menus1 {
+            right: initial;
+            text-align: center;
+        }
+
+        .menus2 {
+            .apps, .socials {
+                font-size: 1.5rem;
+            }
+
+            .donate-btn {
+                font-size: 0.85rem;
+            }
+        }
     }
 }
 

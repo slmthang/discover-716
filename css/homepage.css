@@ -18,6 +18,9 @@ main #part1 #intro-message > p {
   font-weight: bolder;
   color: var(--color-secondary);
 }
+main #part1 #intro-message img {
+  width: 100%;
+}
 main #part2 {
   background-color: var(--color-primary);
   position: relative;
