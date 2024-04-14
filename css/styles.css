@@ -40,6 +40,8 @@
   font-size: 1rem;
   padding: 0 0.5rem;
   font-weight: 300;
+  text-decoration: none;
+  color: var(--light-text);
 }
 #nav-bar #top-nav-bar #top-nav-bar1 #top-nav-menus .top-nav-menu-option > p:hover {
   cursor: pointer;
@@ -196,6 +198,8 @@
   border: 0.5px solid var(--light-text);
   padding: 0.2rem 0.7rem;
   border-radius: 1rem;
+  text-decoration: none;
+  color: var(--light-text);
 }
 #mobile-nav-menu .menus2 .donate-btn:hover {
   cursor: pointer;
@@ -273,6 +277,8 @@
   border: 0.5px solid var(--light-text);
   padding: 0.2rem 0.7rem;
   border-radius: 1rem;
+  text-decoration: none;
+  color: var(--light-text);
 }
 #welcome-pop-up #pop-up-msg .donate-btn:hover {
   cursor: pointer;

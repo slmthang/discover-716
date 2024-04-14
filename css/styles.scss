@@ -48,6 +48,8 @@
 					font-size: 1rem;
 					padding: 0 0.5rem;
 					font-weight: 300;
+					text-decoration: none;
+					color: var(--light-text);
 
 					>p {
 						&:hover {
@@ -245,6 +247,8 @@
 			border: 0.5px solid var(--light-text);
 			padding: 0.2rem 0.7rem;
 			border-radius: 1rem;
+			text-decoration: none;
+			color: var(--light-text);
 
 			&:hover {
 				cursor: pointer;
@@ -340,7 +344,9 @@
 			border: 0.5px solid var(--light-text);
 			padding: 0.2rem 0.7rem;
 			border-radius: 1rem;
-
+			text-decoration: none;
+			color: var(--light-text);
+			
 			&:hover {
 				cursor: pointer;
 				color: var(--color-secondary);
